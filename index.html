@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="counter strike global offensive agents">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/63f37eb4e0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <!-- logo -->
+        <div class="flex-logo-title">
+            <div class="logo">
+                <svg width="115" height="50" viewBox="0 0 115 50" 
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" 
+                d="M111.208 23.3753H99.6767C97.5906 23.3753 95.8901 25.0847 95.8901 27.1778V37.1526C95.8901 39.2474 97.5906 40.9551 99.6767 40.9551H111.208C113.294 40.9551 114.995 39.2474 114.995 37.1526V27.1778C114.995 25.0847 113.294 23.3753 111.208 23.3753ZM68.8424 10.2599H67.4241V10.0111C67.8131 10.018 68.0592 9.935 67.8871 9.59104C67.6238 9.07424 68.7597 9.1019 68.9267 9.21425C69.2245 9.41129 69.0282 9.9834 68.8424 10.2599ZM66.9026 10.6056H68.6221C68.431 10.896 67.8957 11.8743 67.5498 11.876C67.4104 11.6807 66.9525 11.0464 66.9026 10.6056ZM99.7369 27.1795H111.146V37.1526H99.7369V27.1795ZM76.3242 27.1795H92.2V27.1778C92.2 25.0847 90.4995 23.3753 88.4135 23.3753H76.2243C74.14 23.3753 72.4378 25.0847 72.4378 27.1778V37.1526C72.4378 39.2474 74.14 40.9551 76.2243 40.9551H88.4135C90.4995 40.9551 92.2 39.2474 92.2 37.1526V30.5707H79.3155C79.3155 32.1903 80.6288 33.5091 82.2415 33.5091H88.5873V37.1526H76.3242V27.1795ZM26.7466 27.1795H41.903V27.1778C41.903 25.0847 40.2008 23.3753 38.1148 23.3753H26.3852C24.2991 23.3753 22.5986 25.0847 22.5986 27.1778V30.2631C22.5986 32.3579 24.2991 34.0673 26.3852 34.0673H38.1475V37.1526H22.5986C22.5986 39.2474 24.2991 40.9551 26.3852 40.9551H38.5072C40.5932 40.9551 42.2954 39.2474 42.2954 37.1526V34.0673C42.2954 31.9725 40.5932 30.2631 38.5072 30.2631H26.7466V27.1795ZM4.92421 27.1795H19.2321V27.1778C19.2321 25.0847 17.5299 23.3753 15.4438 23.3753H3.9139C1.82787 23.3753 0.12738 25.0847 0.12738 27.1778V37.1526C0.12738 39.2474 1.82787 40.9551 3.9139 40.9551H15.4438C17.5299 40.9551 19.2321 39.2474 19.2321 37.1526H4.92421V27.1795ZM72.4877 8.52806C72.412 8.56608 72.326 8.60411 72.2038 8.62658C71.6633 9.39573 71.9886 9.30585 71.0351 9.9471C71.0368 11.2348 71.0747 11.3748 71.3742 12.5155C71.3828 12.5432 71.3776 12.5691 71.3638 12.5933C71.3483 12.6175 71.3277 12.6331 71.3002 12.6383C71.0695 12.6884 70.7373 12.7731 70.5463 12.8094C70.5515 12.8509 70.6427 13.5803 70.5394 14.123C70.3793 14.9751 68.3587 16.8418 67.8751 16.9369C67.2073 17.0682 66.462 16.4771 65.2951 15.962C64.9749 15.8203 63.8958 15.1082 63.3313 14.9198C62.8631 14.7625 62.3932 15.9085 62.975 16.2144C63.2452 16.3578 63.6772 16.5514 63.8132 16.9058C64.2176 17.9584 63.7495 22.0202 62.9165 22.8377C62.5206 22.8343 62.1884 22.4696 61.8941 22.5646C61.3691 22.8533 61.7013 24.4642 61.8941 24.7442C65.123 28.0801 64.7392 30.55 66.1092 32.3942C66.7357 32.3942 66.3243 33.0597 66.7994 33.8409C66.925 34.2419 66.7615 34.9229 66.6944 35.1822C66.6944 35.5175 66.6944 35.8528 66.6944 36.1881C66.66 36.2936 66.6255 36.3973 66.5894 36.5027C66.5894 36.7965 66.5894 37.0886 66.5894 37.3825C66.493 37.8111 66.388 38.3867 66.2985 38.7877C66.1057 39.6311 66.8458 40.288 66.4018 41.0917C66.4018 41.586 66.4035 41.4875 66.1092 41.8885C66.1092 42.6559 65.9302 44.2737 66.1092 44.8441C66.2348 45.2416 67.6703 46.9251 68.03 47.0876C68.8974 47.4748 70.1762 47.3918 69.7615 48.7642C67.2228 49.5471 65.6014 48.3217 64.2469 48.3027L64.1849 48.536C63.3175 48.5377 62.6256 48.3234 62.4363 48.2612C62.4345 48.0261 62.7168 46.2216 62.8115 45.9347C62.9096 45.7809 63.006 45.6271 63.1041 45.4732C63.2091 45.1656 62.9974 42.9134 62.9784 42.3085C62.438 41.9092 62.333 40.6924 62.333 40.0235C62.1764 39.5067 62.1764 38.8931 62.1437 38.2207C62.1299 37.9062 61.9423 37.443 62.0611 37.0471C62.1419 36.7775 62.4449 36.66 62.5206 36.4387C62.5206 36.1881 62.5206 35.9358 62.5206 35.6851C62.6635 34.8918 62.6187 34.5254 62.1437 34.05C60.9561 34.0656 60.7926 34.1226 60.1403 33.1063C59.9372 32.7918 58.2763 30.1594 58.1162 30.0885C56.7341 29.4835 57.0095 29.7186 56.4054 28.6435C56.3796 28.6435 56.0112 28.7662 55.6877 29.2554C55.192 29.9969 54.3176 32.408 54.0681 33.2532C53.9286 33.7251 54.0681 34.2471 53.8581 34.6377C53.7066 34.9194 53.2144 35.0111 53.1077 35.2029C52.6223 36.0792 52.9855 36.0101 52.0629 36.6289C51.8977 36.8432 51.8925 37.1647 51.772 37.4239C51.7015 37.5225 51.6326 37.621 51.5621 37.7178C51.4072 38.0531 51.7273 38.6615 51.6671 38.8706C51.507 39.4203 51.297 39.9734 51.0836 40.485C50.6602 41.4927 50.7153 42.8305 50.2884 43.4492C50.075 43.7604 49.5569 43.4562 49.1628 43.712C49.1404 43.928 48.5139 45.3661 48.39 45.7671C48.39 46.5276 48.39 47.2898 48.39 48.0503C48.5088 48.4358 48.8323 48.8022 48.7359 49.2896C48.6327 49.8081 46.8358 49.8012 45.8599 49.6595C45.2076 49.5644 45.0114 49.0822 45.0217 48.5222C45.0355 47.8637 46.3625 43.5772 46.2816 43.2937C45.2747 42.1529 46.5518 40.9811 46.9305 39.9181C47.1129 39.4013 47.001 38.6788 47.2007 38.2C47.5552 37.5501 47.9098 36.9002 48.2644 36.2503C48.9132 35.6367 48.6241 35.6056 48.9752 35.056C49.2798 34.5789 49.6482 34.2575 49.4347 33.5263C49.0044 32.0554 49.9356 29.971 49.9975 28.4327C49.8323 28.2581 49.2712 28.3134 49.2007 27.845C49.0595 26.8892 49.5621 25.1988 49.8719 25.038C50.0096 24.9672 50.1679 25.0294 50.2901 24.9533C50.2901 24.2378 49.581 20.252 50.1197 20.0498C50.4519 19.9253 51.2144 19.8596 51.3624 19.7922C51.3538 19.6228 51.2368 19.2599 51.0974 19.2409C50.8598 19.208 50.3745 19.1164 49.9872 19.0265C48.8013 18.7517 49.8994 14.0538 49.9132 14.0348C50.2402 13.601 51.7548 14.1852 51.939 13.4472C52.445 12.799 51.5483 10.3032 53.2763 7.23001C53.8598 6.19122 54.9768 5.1438 56.2797 5.588C56.7169 5.73665 56.4518 6.36752 57.2195 5.69344C57.2384 5.29936 57.056 4.96922 56.9475 4.64428C55.6722 0.822722 59.994 -1.24966 63.0215 0.93507C63.3605 1.07334 63.5602 1.14075 63.8132 1.33261C63.9801 2.19855 64.8355 3.73858 63.9818 4.74971C63.6307 4.82404 63.2039 5.02108 62.9371 5.2112C62.9319 5.56035 62.9784 5.88184 63.0421 6.09098C63.0989 6.27937 63.2073 6.3537 62.9268 6.46777C62.8906 6.4816 62.9061 6.59913 62.9251 6.64407C63.6325 6.78235 64.3846 6.51271 64.8579 6.32086H65.4207V5.60701H65.6909V5.04873H65.9594V6.01492H66.6634V6.32086H77.0952V6.86531H77.5565V4.87416H77.9455V6.4937H78.8336V7.41841H81.596V7.14359H82.0556V7.26285H83.3602V8.03373H82.0556V8.15472H81.596V7.8799H78.8336V8.15472C78.4274 8.15472 78.0229 8.15472 77.6168 8.15472V7.96805H77.0952V8.52806H72.4877Z" fill="#231F20">
+                </svg>
+                </div>
+                <!-- title -->
+            <div class="title">
+                <h1>CS:GO Agents</h1>
+            </div>
+        </div> 
+        <!-- navbar -->
+        <nav class="navbar">
+            <ul class="navflex">
+                <li class="navitems"><a href="#">Terrorist</a></li>
+                <li class="navitems"><a href="#">Counter-Terrorist</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid">
+
+
+            <div class="card 1 short">
+                <div class="upper">
+                    <h1>Blackwolf</h1>
+                    <img src="./img/Blackwolf.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Sabre
+                        </li>
+                        <li>
+                            RARITY<br>
+                        Superior Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                        Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"I don’t need to see them to kill them."</h1>
+                        <p>Blackwolf stalks Sabre’s enemies with preternatural determination and focus. Raised deep within the bitter forests of Eastern Europe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 2">
+                <div class="upper">
+                    <h1>Special Agent Ava</h1>
+                    <img src="./img/Special_Agent_Ava.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            FBI
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Master Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"They see me. They’re confused. And then they’re dead."</h1>
+                        <p>
+                            Initially underestimated, Special Agent Ava soon became her team’s ultimate secret weapon. Despite receiving three out of five possible FBI Honorary Medals, Ava is surprisingly indifferent to her accomplishments.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 3">
+                <div class="upper">
+                    <h1>‘The Doctor’ Romanov</h1>
+                    <img src="./img/'The_Doctor'_Romanov.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Sabre
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Master Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"It’s simple. We make a plan and the plan is to win."</h1>
+                        <p>
+                            After expertly smuggling pharmaceuticals across disputed borders for over 30 years, the 'doctor' now leads Sabre’s Utility Disruption Operations. 
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card 4">
+                <div class="upper">
+                    <h1>The Elite Mr. Muhlik</h1>
+                    <img src="./img/The_Elite_Mr._Muhlik.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Elite Crew
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Master Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"Pressure and time."</h1>
+                        <p>
+                            First appeared operating as an 'Acquisitions Consultant' for arms industry magnates, Mr. Muhlik quickly worked his way on to many Most Wanted lists worldwide.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card 5 long">
+                <div class="upper">
+                    <h1>Lt. Commander Ricksaw</h1>
+                    <img src="./img/Lt._Commander_Ricksaw.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            NSWC SEAL
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Master Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"Hotdogs, hellcats and hand grenades. Hooya!"</h1>
+                        <p>
+                            Lt. Commander Ricksaw’s comically laissez-faire attitude toward heavy combat keeps his SEAL team calm and deadly in the most dire situations.
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="card 6">
+                <div class="upper">
+                    <h1>Rezan The Ready</h1>
+                    <img src="./img/Rezan_The_Ready.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Sabre
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Superior Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"I take great pride in my work."</h1>
+                        <p>
+                            An expert grenadier and the once-celebrated author of The Joy of Preparedness, Rezan The Ready is Sabre’s self-appointed Head of Operations.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card 7">
+                <div class="upper">
+                    <h1>‘Two Times’ McCoy</h1>
+                    <img src="./img/'Two_Times'_McCoy.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            USAF TACP
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Superior Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"Yep. Still here."</h1>
+                        <p>
+                            'Two Times' McCoy earned his nickname by completing TACP's field training twice. Official records mark this up to a scheduling mix-up, but his teammates report restraining him from completing the trifecta.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 8">
+                <div class="upper">
+                    <h1>Prof. Shahmat</h1>
+                    <img src="./img/Prof._Shahmat.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Elite Crew
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Superior Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"Watch and learn."</h1>
+                        <p>
+                            After graduating Magna Cum Laude, Prof. Shahmat began teaching to impart knowledge. With every class Shahmat realized his pupils didn't have the same revolutionary desires that he did.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 9">
+                <div class="upper">
+                    <h1>Michael Syfers</h1>
+                    <img src="./img/Michael_Syfers.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            FBI Sniper
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Superior Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"Naturally, I finished my reps."</h1>
+                        <p>
+                            An ex-Division I athlete, Syfers was recruited by the FBI after a catastrophic knee injury ended his sports career early. 
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 10 short">
+                <div class="upper">
+                    <h1>Slingshot</h1>
+                    <img src="./img/Slingshot.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Phoenix
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Exceptional Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"If I can knife, I knife."</h1>
+                        <p>
+                            Slingshot is a critical component of Phoenix Connection’s dominance in close-range combat. Tightly wound and capable of devastating results with little resources.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 11 short">
+                <div class="upper">
+                    <h1>Buckshot</h1>
+                    <img src="./img/Buckshot.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            NSWC SEAL
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Exceptional Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"They talk to me. The guns. They have feelings."</h1>
+                        <p>
+                            Known as SEAL Team's "Weapons Sommelier" Buckshot has thoroughly field-tested and reviewed almost every available military weapon in staggering depth.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 12 short">
+                <div class="upper">
+                    <h1>Osiris</h1>
+                    <img src="./img/Osiris.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Elite Crew
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Exceptional Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"Any objections?"</h1>
+                        <p>
+                            Osiris earned his nickname from passing judgement, often too quickly, on his marks. His reasoning is simple: "When your time is as valuable as mine, why make small talk?"
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card 13 short">
+                <div class="upper">
+                    <h1>Maximus</h1>
+                    <img src="./img/Maximus.webp" alt="">
+                    <ul class="card-flex">
+                        <li>AFFILIATION<br>
+                            Sabre
+                        </li>
+                        <li>
+                            RARITY<br>
+                            Exceptional Agent
+                        </li>
+                        <li>
+                            COLLECTION<br>
+                            Shattered Web Agents
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <div class="text">
+                        <h1>"No, YOU overreacted."</h1>
+                        <p>
+                            Motivated by a simmering inner rage and a lifelong obsession with vengeance for transgressions large, small, and seemingly insignificant, Maximus is Sabre’s first choice for close quarter mission support.
+                    </div>
+                </div>
+            </div>
+            <div class="card 6">
+                
+            </div>
+            <div class="card 7">
+                
+            </div>
+            <div class="card 8">
+                
+            </div>
+            <div class="card 9">
+                
+            </div>
+            <div class="card 10">
+                
+            </div>
+            <div class="card 11">
+                
+            </div>
+            <div class="card 12">
+                
+            </div>
+            <div class="card 13">
+                
+            </div>
+            <div class="card 14">
+                
+            </div>
+            <div class="card 15">
+                
+            </div>
+            <div class="card 16">
+                
+            </div>
+            <div class="card 17 ">
+                
+            </div>
+            <div class="card 18">
+                
+            </div>
+            <div class="card 19">
+                
+            </div>
+            <div class="card 20">
+                
+            </div>
+            <div class="card 21">
+                
+            </div>
+            <div class="card 22">
+                
+            </div>
+            <div class="card 23">
+                
+            </div>
+            <div class="card 24">
+                
+            </div>
+            <div class="card 25">
+                
+            </div>
+            <div class="card 26">
+                
+            </div>
+            <div class="card 27">
+                
+            </div>
+            <div class="card 28">
+                
+            </div>
+            <div class="card 29">
+                
+            </div>
+            <div class="card 30">
+                
+            </div>
+            <div class="card 31">
+                
+            </div>
+            <div class="card 32">
+                
+            </div>
+            <div class="card 33">
+                
+            </div>
+            <div class="card 34">
+                
+            </div>
+            <div class="card 35">
+                
+            </div>
+            <div class="card 36">
+                
+            </div>
+            <div class="card 37">
+                
+            </div>
+            <div class="card 38">
+                
+            </div>
+            <div class="card 39">
+                
+            </div>
+            <div class="card 40">
+                
+            </div>
+            <div class="card 41">
+                
+            </div>
+            <div class="card 42">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="footer-flex">
+            <div class="footer-text">
+                <p>Don't click social icons .</p>
+            </div>
+            <div class="social">
+                <div class="social-flex" >
+
+                    
+                    <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo" target="_blank" rel="noopener" alt="facebook" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+                    
+
+                    
+                    <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo" target="_blank" rel="noopener" alt="instagram" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                    
+
+                   
+                    <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo" target="_blank" rel="noopener" alt="reddit" aria-label="reddit"><i class="fab fa-reddit"></i></a>
+                   
+                </div>
+            </div>
+
+
+        </div>
+        
+    </footer>
+</body>
+</html>

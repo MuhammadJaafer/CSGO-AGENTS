@@ -1,0 +1,413 @@
+/* <<<<<<<<<<<<<<<general>>>>>>>>>>>>>> */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+/* <<<<<<<<<<<<<<<general>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<header>>>>>>>>>>>>>>>> */
+
+.header{
+    background: #F3A31E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header li,a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.navflex{
+    display: flex;
+    justify-content: space-between;
+    width: 350px ;
+
+}
+
+.navitems a{
+    margin-right: 10px;
+    padding: 5px;
+    display:inline-block;
+}
+.navitems a::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.navitems a:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+.logo{
+    margin-left: 10px;
+    margin-top: 6px;
+    height: 57;
+    grid-area: logo;
+}
+.logo:hover{
+    transform: scale(1.04);
+}
+
+.title h1{
+    line-height: 220%;
+}
+
+.title{
+    grid-area: title;
+}
+.flex-logo-title{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: "logo . . title title title";
+    width: 100%;
+}
+
+@media (max-width:1000px){
+    .flex-logo-title{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: "logo . title title title";
+        width: 100%;
+    }
+}
+
+
+@media (max-width:803px){
+    .header{
+        background: #F3A31E;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .flex-logo-title{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: "logo . title title title";
+        width: 100%;
+    }
+    .title h1{
+        text-align: end;
+        line-height: 220%;
+    }
+
+    nav{
+        width: 100%;
+    }
+    .navflex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+    }
+
+
+}
+
+@media (max-width:420px){
+    .header{
+        background: #F3A31E;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .flex-logo-title{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: "logo  title title title title";
+        width: 100%;
+        
+    }
+    .title h1{
+        text-align: end;
+        line-height: 220%;
+        
+    }
+
+    nav{
+        width: 100%;
+    }
+    .navflex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+    }
+
+}
+
+@media (max-width:350px){
+    .header{
+        background: #F3A31E;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .flex-logo-title{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas:
+         ".  . logo . ."
+         " title title  title title . ";
+        width: 100%;
+        
+    }
+    .title h1{
+        text-align: end;
+        line-height: 220%;
+        
+    }
+
+    nav{
+        width: 100%;
+    }
+    .navflex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+    }
+
+}
+/* <<<<<<<<<<<<<<<<header>>>>>>>>>>>>>>>> */
+
+
+/* <<<<<<<<<<<<<<<<main aria>>>>>>>>>>>>>>>>>>> */
+main{
+    background: black;
+    padding-bottom: 30px;
+}
+
+.grid{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,220px);
+    grid-auto-rows: minmax(360px,auto);
+    align-items: end;
+    justify-items:center;
+    justify-content:space-evenly;
+    gap:10px;
+}
+
+/* <<<<<<<<<<<<<<<<main aria>>>>>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<<<<<footer area>>>>>>>>>>>>>>>>>> */
+
+footer{
+    height: 80px;
+    background:#F3A31E ;
+}
+.footer-flex{
+    display: flex;
+    align-items: center;
+    height: 100% ;
+    justify-content: space-between;
+}
+.social{
+    width: 25%;
+    max-width: 450px;
+    min-width: 250px;
+}
+
+.footer-text{
+width: 75%;
+}
+.social-flex{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.fab{
+    font-size: 3rem;   
+}
+
+.footer-text p {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+@media (max-width:640px){
+    .footer-flex{
+        display: flex;
+        align-items: center;
+        height: 100% ;
+        justify-content: baseline;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        height: 120px;
+        background:#F3A31E ;
+    }
+    .social{
+       
+    }
+    
+    .footer-text{
+        
+    }
+    .footer-text p {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .social-flex{
+        display: flex;
+        justify-content:space-between;
+        
+    }
+    
+}
+
+@media (max-width:500px){
+    .footer-flex{
+        display: flex;
+        align-items: center;
+        height: 100% ;
+        justify-content: baseline;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        height: 170px;
+        background:#F3A31E ;
+    }
+    .social{
+       
+    }
+    
+    .footer-text{
+        
+    }
+    .footer-text p {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .social-flex{
+        display: flex;
+        justify-content:space-between;
+        
+    }
+    
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<footer area>>>>>>>>>>>>>>>>>>>> */
+
+
+/* <<<<<<<<<<<<<<<<<<card area>>>>>>>>>>>>>> */
+
+.card{
+    width: 220px;
+    height: 340px;
+    background:#F3A31E;
+    border-radius: 10px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #F3A31E;
+}
+
+.upper h1{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 0.70rem;
+}
+
+.upper img {
+    width: 120px;
+    position:absolute;
+    top: -18px;
+    left: -5px;
+}
+
+.upper li{
+    text-align: center;
+}
+
+.card-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: .65rem;
+    font-weight: 900;
+    height: 150px;
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.card-flex *li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.lower{
+    background: black;
+    height: 146px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.text{
+    color:#F3A31E ;
+    
+}
+
+.text h1{
+    font-size: .70rem;
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+.text p{
+   font-size: .65rem;
+   margin: 5px;
+   margin-bottom: 0;
+   font-weight: 700;
+   text-align: start;
+}
+
+.long .upper h1{
+    right: 0;
+    font-size: .67rem;
+}
+
+.short .upper h1{
+    right: 65px;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<card area>>>>>>>>>>>>>> */
