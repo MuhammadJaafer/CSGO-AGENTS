@@ -6,15 +6,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     color: black;
     font-family: 'Poppins', sans-serif;
+    cursor: url(/cursor/knife.png),auto;
 }
 
 li{
     list-style-type: none;
 }
+
+
 /* <<<<<<<<<<<<<<<general>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<header>>>>>>>>>>>>>>>> */
