@@ -423,5 +423,14 @@ width: 75%;
     right: -5px;
 }
 
+.a35 .upper img{
+
+    transform: scale(1.05);
+
+}
+
+.a37 img{
+    left:-7px;
+}
 
 /* <<<<<<<<<<<<<<<<<<card area>>>>>>>>>>>>>> */
