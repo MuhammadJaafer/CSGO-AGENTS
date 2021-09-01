@@ -11,7 +11,7 @@
 body{
     color: black;
     font-family: 'Poppins', sans-serif;
-    cursor: url(/cursor/knife.png),auto;
+    cursor: url(../cursor/knife.png),auto;
 }
 
 li{
