@@ -440,5 +440,9 @@ width: 75%;
 a{
     cursor: url(/cursor/48d6594caf0a134.png),auto;
 }
-
+.card:hover{
+    transform: scale(1.02);
+    filter: brightness(107%);
+    
+}
 /* <<<<<<<<<<<<<<<<<<card area>>>>>>>>>>>>>> */
